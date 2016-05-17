@@ -1,0 +1,55 @@
+{
+  "name": "cuss",
+  "version": "0.0.0",
+  "description": "Map of English profane words to a rating of sureness",
+  "license": "MIT",
+  "keywords": [
+    "offensive",
+    "profane",
+    "vulgar",
+    "word",
+    "list"
+  ],
+  "files": [
+    "index.js",
+    "data/index.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/cuss.git"
+  },
+  "bugs": "https://github.com/wooorm/cuss/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "eslint": "^2.0.0",
+    "esmangle": "^1.0.0",
+    "istanbul": "^0.4.0",
+    "jscs": "^3.0.0",
+    "jscs-jsdoc": "^2.0.0",
+    "profanities": "^1.0.0",
+    "remark": "^3.0.0",
+    "remark-comment-config": "^2.0.2",
+    "remark-github": "^3.0.0",
+    "remark-lint": "^2.2.1",
+    "remark-slug": "^3.0.1",
+    "remark-validate-links": "^2.0.2",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "build-md": "remark . --quiet --frail",
+    "build-bundle": "browserify index.js --bare -s cuss > cuss.js",
+    "build-mangle": "esmangle cuss.js > cuss.min.js",
+    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
+    "lint-api": "eslint .",
+    "lint-style": "jscs --reporter inline .",
+    "lint": "npm run lint-api && npm run lint-style",
+    "test-api": "node test.js",
+    "test-coverage": "istanbul cover test.js",
+    "test": "npm run build && npm run lint && npm run test-coverage"
+  }
+}
