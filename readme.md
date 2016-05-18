@@ -1,10 +1,6 @@
 # cuss [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-> :warning: This project is not working as documented yet.
-> I’m currently in the process of rating the phrases.
-> Want to help? Pick a letter and create a PR for suggestions!
-
-List of 1551 (possible) English profane words to sureness rating.
+Map of [1700+ profanities][profanities] to sureness rating.
 This rating _does not_ represent _how_ vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
@@ -24,7 +20,7 @@ npm install cuss
 ```js
 var cuss = require('cuss');
 
-Object.keys(cuss).length; // 1551
+Object.keys(cuss).length; // 1727
 
 console.log(cuss.beaver); // 0
 console.log(cuss.asshat); // 2
@@ -48,7 +44,7 @@ on context.
 
 ## Support
 
-**cuss** supports 1551 English profane words and phrases from
+**cuss** supports 1727 English profane words and phrases from
 [profanities][support].
 
 ## License
