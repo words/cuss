@@ -36,9 +36,16 @@ test('cuss', function (t) {
     t.end();
 });
 
-test('profanities are represented', function (t) {
+test('profanities', function (t) {
     profanities.forEach(function (profanity) {
-        t.ok(profanity in cuss, profanity.replace(/[aeiouy]/g, '*'));
+        t.test(profanity.replace(/[aeiouy]/g, '*'), function (st) {
+            st.plan(4);
+
+            st.ok(profanity in cuss, 'should exist');
+            st.equal(typeof cuss[profanity], 'number', 'should be a number');
+            st.ok(cuss[profanity] >= 0, 'should be gte 0');
+            st.ok(cuss[profanity] <= 2, 'should be lte 2');
+        });
     });
 
     t.end();
