@@ -1,19 +1,24 @@
 language: node_js
 node_js:
+- '0.10'
+- '0.11'
+- '0.12'
+- '4.0'
 - '5.0'
+- '6.0'
 sudo: false
 after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
     api_key:
-        secure: Uwvuinw4bpjhUUvxCoJpBhwMnbLBIM+0IvRkywVmlBK00jhnQEU+wCi51ujq2rUJ2oBe6HBMsJjpiO2jnkke4+ovnVzFAli4pF02jlhNKbxvjCgL7opCnY3P0K1ianCbij6MKzL8cXZPq8Y1UWIEZIJcXrH+6Ki2t7IfXpbCUfc=
+        secure: pD/svQMO02DoYg4kNXlLd3LJASzDXkDT+1SuJEkZ8MVqIQZ41enje1VxHDZ+n6JJAqYGXfDaDNo+bMsSs9tSl+u+9grsk9iUWXKgX5SJcFak1rDos9PaQDorssvO6NuEhg1HsspmP8v9tkBvWntaXjWFt2+O08H0UVHMuxB1DFfhXclF+zqCiXgBXwQytmtxDnVqekftZZQXsQTEG4AtYzWeRRbX4xit3t6l9qkF5C2Micf4rCsC88BjlXpmkPD9Ca3zCPLwS5CFxfeNaDp010Ml4O/9qMUohuP23UGLWCHLtlV+H1/vOq8l0HlgBTDrk0+8zxqIzYiwnbB1PkOzePRiucs6dHsSsCkkqIKI/Yc8qV+sv7pbHmVswURKYycfIQMpuMVpmICsnY1IbRmQfxI4tYlvgOe/NTobZmyoHn/gXv1F1l6suK2hIrdv6ty8iefz+K91hWZGETtF11dTJFm02amomrDcnriJZh7dhGQ5uWEUFcpQLchrG83iZ8DScXtfxprMtsBAzExXeHKCYp0cwzn42lhcpTgOnrU51BPmHiJAKiwPdpUWktmnstTIk4pMaoJgLEhsow05pVuYlSqEry54Fo/UJNVqq8MLve//bs5SAQWG6CWuj8CTNrKL6lWJwVh3hK5e+zCoxV1PpoSJ5lYAoo6k8GQS/D+vSEY=
     on:
-      node: '5.0'
+      node: '6.0'
       tags: true
   - provider: releases
     api_key:
-        secure: Pjl0kiAPE3E6qA1EYFrGj9oKUehJpANttmVTcZAUT8s0M24Nxro9uwVErVpPTCeQZc5XUvXr47hU4w3HDFbICW4QJ++TKuXtMvgW7Cy7aLSYzltm5Ukl8M/8CqATSU66mo58/Q0kWrNNH/zr+a4CvWTYuiYOxtVsBXUfIiksd68=
+        secure: LkRKPHkYSxKe8BBCoHLdvSZfi6bvpE8dSE2tSyoRolzimkXM1MZZJqGlDNSTDnMRHb7EG6Gg11xPlN7/8wHopAGVJHevjUcUP62kbBZjTFxsI2txEnah/4JY0SSpsdM4W+00d7EnwdbS7AlvkMKGrvie1lW6JvKMTDixb0PoPgt361GVBjnQTBi8bcsToKeJlOyai2vQoF3SZj61+FAxrPgGxBwJqKNfpo4S4OpFWIaN+M0CEjSUaScYFk7TSuAvJA/fqEj8LQlvIy0ai2huiTmK46+B9Xmn0zrBbfRf98+Y8TsmEmQPDEdOGzcrjIMiZh2OPgLp5iy+6yrPus10RzPLiUqHRuqEO8kXD7m8VD+xM1X3Q0Orjyvh9vd+KsZpOi8Cft0VIKqwkbGieoi5y+TsSDudaTmAYCBqiz6jTtlXKjiAsfF7FzegYRA7JCrt7e/BZbGZ5t7w7vj21Ch316/pZvZMF9B+HoEyul/AaezQHeRlEjfADSNF9q6YCHD3SSvbwNNGGOh4AM5OyUE1xTSzF2EtfkUwGOR/qc9/TbRziaWsyBpFCX//pws41vESZKB2qigTdHPmIuFjdeuvL8hQ1IyRUhePmEC0BKgM+edD9C/qchopsqUIsE5cxpptZTaDJOTBZKIN8+2yuOgZShQLZrTpo1P1Qz/YrPr48MQ=
     file:
       - "cuss.js"
       - "cuss.min.js"
