@@ -31,7 +31,7 @@
     "istanbul": "^0.4.0",
     "jscs": "^3.0.0",
     "jscs-jsdoc": "^2.0.0",
-    "profanities": "^1.0.0",
+    "profanities": "^2.1.0",
     "remark": "^3.0.0",
     "remark-comment-config": "^2.0.2",
     "remark-github": "^3.0.0",
