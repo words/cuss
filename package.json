@@ -32,12 +32,11 @@
     "jscs": "^3.0.0",
     "jscs-jsdoc": "^2.0.0",
     "profanities": "^2.1.0",
-    "remark": "^3.0.0",
-    "remark-comment-config": "^2.0.2",
-    "remark-github": "^3.0.0",
-    "remark-lint": "^2.2.1",
-    "remark-slug": "^3.0.1",
-    "remark-validate-links": "^2.0.2",
+    "remark-cli": "^1.0.0",
+    "remark-comment-config": "^4.0.0",
+    "remark-github": "^5.0.0",
+    "remark-lint": "^4.0.0",
+    "remark-validate-links": "^4.0.0",
     "tape": "^4.0.0"
   },
   "scripts": {
