@@ -2,6 +2,11 @@
 
 <!--lint disable no-multiple-toplevel-headings-->
 
+1.2.1 / 2016-08-11
+==================
+
+*   Update code-style, remove coverage, simplify ([`ec5992b`](https://github.com/wooorm/cuss/commit/ec5992b))
+
 1.2.0 / 2016-06-23
 ==================
 
