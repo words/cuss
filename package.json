@@ -10,45 +10,58 @@
     "word",
     "list"
   ],
-  "files": [
-    "index.js",
-    "data/index.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/cuss.git"
-  },
+  "repository": "https://github.com/wooorm/cuss",
   "bugs": "https://github.com/wooorm/cuss/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "engines": {
+    "node": ">=0.11.0"
+  },
   "dependencies": {},
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
   "devDependencies": {
     "browserify": "^13.0.0",
-    "eslint": "^2.0.0",
     "esmangle": "^1.0.0",
-    "istanbul": "^0.4.0",
-    "jscs": "^3.0.0",
-    "jscs-jsdoc": "^2.0.0",
-    "profanities": "^2.1.0",
+    "profanities": "^2.2.0",
     "remark-cli": "^1.0.0",
     "remark-comment-config": "^4.0.0",
     "remark-github": "^5.0.0",
     "remark-lint": "^4.0.0",
     "remark-validate-links": "^4.0.0",
-    "tape": "^4.0.0"
+    "tape": "^4.4.0",
+    "xo": "^0.16.0"
   },
   "scripts": {
     "build-md": "remark . --quiet --frail",
-    "build-bundle": "browserify index.js --bare -s cuss > cuss.js",
+    "build-bundle": "browserify index.json -s cuss > cuss.js",
     "build-mangle": "esmangle cuss.js > cuss.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
-    "lint-api": "eslint .",
-    "lint-style": "jscs --reporter inline .",
-    "lint": "npm run lint-api && npm run lint-style",
-    "test-api": "node test.js",
-    "test-coverage": "istanbul cover test.js",
-    "test": "npm run build && npm run lint && npm run test-coverage"
+    "lint": "xo",
+    "test-api": "node test",
+    "test": "npm run build && npm run lint && npm run test-api"
+  },
+  "xo": {
+    "space": true,
+    "ignores": [
+      "cuss.js",
+      "cuss.min.js"
+    ]
+  },
+  "remarkConfig": {
+    "output": true,
+    "plugins": {
+      "comment-config": null,
+      "lint": null,
+      "github": null,
+      "validate-links": null
+    },
+    "settings": {
+      "bullet": "*"
+    }
   }
 }

@@ -1,4 +1,4 @@
-# cuss [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# cuss [![Build Status][travis-badge]][travis]
 
 Map of [1700+ profanities][profanities] to sureness rating.
 This rating _does not_ represent _how_ vulgar a term is, instead, how
@@ -6,14 +6,11 @@ likely it is to be used as either profanity or clean text.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install cuss
 ```
-
-**cuss** is also available as an AMD, CommonJS, and globals module,
-[uncompressed and compressed][releases].
 
 ## Usage
 
@@ -57,13 +54,7 @@ on context.
 
 [travis]: https://travis-ci.org/wooorm/cuss
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/cuss.svg
-
-[codecov]: https://codecov.io/github/wooorm/cuss
-
-[npm-install]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/cuss/releases
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
