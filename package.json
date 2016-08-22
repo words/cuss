@@ -28,11 +28,8 @@
     "browserify": "^13.0.0",
     "esmangle": "^1.0.0",
     "profanities": "^2.2.0",
-    "remark-cli": "^1.0.0",
-    "remark-comment-config": "^4.0.0",
-    "remark-github": "^5.0.0",
-    "remark-lint": "^4.0.0",
-    "remark-validate-links": "^4.0.0",
+    "remark-cli": "^2.0.0",
+    "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.4.0",
     "xo": "^0.16.0"
   },
@@ -48,20 +45,11 @@
   "xo": {
     "space": true,
     "ignores": [
-      "cuss.js",
-      "cuss.min.js"
+      "cuss.js"
     ]
   },
   "remarkConfig": {
     "output": true,
-    "plugins": {
-      "comment-config": null,
-      "lint": null,
-      "github": null,
-      "validate-links": null
-    },
-    "settings": {
-      "bullet": "*"
-    }
+    "presets": "wooorm"
   }
 }
