@@ -11,6 +11,7 @@
 /* Dependencies. */
 var test = require('tape');
 var profanities = require('profanities');
+var fck = require('f-ck');
 var cuss = require('./');
 
 /* Tests. */
@@ -30,7 +31,7 @@ test('cuss', function (t) {
 
 test('profanities', function (t) {
   profanities.forEach(function (profanity) {
-    t.test(profanity.replace(/[aeiouy]/g, '*'), function (st) {
+    t.test(fck(profanity), function (st) {
       st.plan(4);
 
       st.ok(profanity in cuss, 'should exist');
