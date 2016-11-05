@@ -1,14 +1,7 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module cuss
- * @fileoverview Test suite for `cuss`.
- */
-
 'use strict';
 
 /* Dependencies. */
+var assert = require('assert');
 var test = require('tape');
 var profanities = require('profanities');
 var fck = require('f-ck');
@@ -33,25 +26,20 @@ test('cuss', function (t) {
 
 test('profanities', function (t) {
   profanities.forEach(function (profanity) {
-    t.test(fck(profanity), function (st) {
-      st.plan(4);
-
+    t.doesNotThrow(function () {
       if (!(profanity in cuss)) {
         missing.push(profanity);
       }
 
-      st.ok(profanity in cuss, 'should exist');
-      st.equal(typeof cuss[profanity], 'number', 'should be a number');
-      st.ok(cuss[profanity] >= 0, 'should be gte 0');
-      st.ok(cuss[profanity] <= 2, 'should be lte 2');
-    });
+      assert.ok(profanity in cuss, 'should exist');
+      assert.equal(typeof cuss[profanity], 'number', 'should be a number');
+      assert.ok(cuss[profanity] >= 0, 'should be gte 0');
+      assert.ok(cuss[profanity] <= 2, 'should be lte 2');
+    }, fck(profanity));
   });
 
-  t.test(function (st) {
-    st.equal(Object.keys(cuss).length, 1751, 'should have a count');
-    st.deepEqual(missing, [], 'should not have missing profanities');
-    st.end();
-  });
+  t.equal(Object.keys(cuss).length, 1751, 'should have a count');
+  t.deepEqual(missing, [], 'should not have missing profanities');
 
   t.end();
 });
