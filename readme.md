@@ -17,7 +17,7 @@ npm install cuss
 ```js
 var cuss = require('cuss');
 
-Object.keys(cuss).length; // 1751
+console.log(Object.keys(cuss).length); // 1751
 
 console.log(cuss.beaver); // 0
 console.log(cuss.asshat); // 2
