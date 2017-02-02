@@ -25,7 +25,7 @@
     "browserify": "^13.0.0",
     "esmangle": "^1.0.0",
     "f-ck": "^1.0.0",
-    "profanities": "^2.3.0",
+    "profanities": "^2.4.0",
     "remark-cli": "^2.0.0",
     "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.4.0",
