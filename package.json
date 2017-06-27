@@ -26,13 +26,13 @@
     "esmangle": "^1.0.0",
     "f-ck": "^1.0.0",
     "profanities": "^2.3.0",
-    "remark-cli": "^2.0.0",
-    "remark-preset-wooorm": "^1.0.0",
+    "remark-cli": "^3.0.0",
+    "remark-preset-wooorm": "^3.0.0",
     "tape": "^4.4.0",
-    "xo": "^0.17.0"
+    "xo": "^0.18.0"
   },
   "scripts": {
-    "build-md": "remark . --quiet --frail",
+    "build-md": "remark . -qfo",
     "build-bundle": "browserify index.json -s cuss > cuss.js",
     "build-mangle": "esmangle cuss.js > cuss.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
@@ -42,12 +42,14 @@
   },
   "xo": {
     "space": true,
+    "esnext": false,
     "ignores": [
       "cuss.js"
     ]
   },
   "remarkConfig": {
-    "output": true,
-    "presets": "wooorm"
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
