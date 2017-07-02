@@ -17,7 +17,7 @@ npm install cuss
 ```js
 var cuss = require('cuss');
 
-console.log(Object.keys(cuss).length); // 1767
+console.log(Object.keys(cuss).length); // 1768
 
 console.log(cuss.beaver); // 0
 console.log(cuss.asshat); // 2
@@ -41,7 +41,7 @@ on context.
 
 ## Support
 
-**cuss** supports 1767 English profane words and phrases from
+**cuss** supports 1768 English profane words and phrases from
 [profanities][support].
 
 ## License

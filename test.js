@@ -38,7 +38,7 @@ test('profanities', function (t) {
     }, fck(profanity));
   });
 
-  t.equal(Object.keys(cuss).length, 1767, 'should have a count');
+  t.equal(Object.keys(cuss).length, 1768, 'should have a count');
   t.deepEqual(missing, [], 'should not have missing profanities');
 
   t.end();
