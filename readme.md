@@ -50,9 +50,9 @@ on context.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/cuss.svg
+[travis-badge]: https://img.shields.io/travis/words/cuss.svg
 
-[travis]: https://travis-ci.org/wooorm/cuss
+[travis]: https://travis-ci.org/words/cuss
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -60,6 +60,6 @@ on context.
 
 [author]: http://wooorm.com
 
-[profanities]: https://github.com/wooorm/profanities
+[profanities]: https://github.com/words/profanities
 
-[support]: https://github.com/wooorm/profanities#support
+[support]: https://github.com/words/profanities#support

@@ -10,8 +10,8 @@
     "word",
     "list"
   ],
-  "repository": "https://github.com/wooorm/cuss",
-  "bugs": "https://github.com/wooorm/cuss/issues",
+  "repository": "words/cuss",
+  "bugs": "https://github.com/words/cuss/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
