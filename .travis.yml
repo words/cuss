@@ -1,14 +1,14 @@
 language: node_js
 node_js:
 - '4.0'
-- '8.0'
+- '9.0'
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
     api_key:
         secure: pD/svQMO02DoYg4kNXlLd3LJASzDXkDT+1SuJEkZ8MVqIQZ41enje1VxHDZ+n6JJAqYGXfDaDNo+bMsSs9tSl+u+9grsk9iUWXKgX5SJcFak1rDos9PaQDorssvO6NuEhg1HsspmP8v9tkBvWntaXjWFt2+O08H0UVHMuxB1DFfhXclF+zqCiXgBXwQytmtxDnVqekftZZQXsQTEG4AtYzWeRRbX4xit3t6l9qkF5C2Micf4rCsC88BjlXpmkPD9Ca3zCPLwS5CFxfeNaDp010Ml4O/9qMUohuP23UGLWCHLtlV+H1/vOq8l0HlgBTDrk0+8zxqIzYiwnbB1PkOzePRiucs6dHsSsCkkqIKI/Yc8qV+sv7pbHmVswURKYycfIQMpuMVpmICsnY1IbRmQfxI4tYlvgOe/NTobZmyoHn/gXv1F1l6suK2hIrdv6ty8iefz+K91hWZGETtF11dTJFm02amomrDcnriJZh7dhGQ5uWEUFcpQLchrG83iZ8DScXtfxprMtsBAzExXeHKCYp0cwzn42lhcpTgOnrU51BPmHiJAKiwPdpUWktmnstTIk4pMaoJgLEhsow05pVuYlSqEry54Fo/UJNVqq8MLve//bs5SAQWG6CWuj8CTNrKL6lWJwVh3hK5e+zCoxV1PpoSJ5lYAoo6k8GQS/D+vSEY=
     on:
-      node: '4.0'
+      node: '9.0'
       tags: true
   - provider: releases
     skip_cleanup: true
@@ -19,4 +19,4 @@ deploy:
       - "cuss.min.js"
     on:
       tags: true
-      node: '8.0'
+      node: '9.0'
