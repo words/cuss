@@ -1,6 +1,5 @@
 'use strict';
 
-/* Dependencies. */
 var assert = require('assert');
 var test = require('tape');
 var profanities = require('profanities');
@@ -9,7 +8,6 @@ var cuss = require('./');
 
 var missing = [];
 
-/* Tests. */
 test('cuss', function (t) {
   t.equal(typeof cuss, 'object', 'should be an object #1');
 
