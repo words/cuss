@@ -22,7 +22,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^14.0.0",
+    "browserify": "^15.0.0",
     "esmangle": "^1.0.0",
     "f-ck": "^1.0.0",
     "profanities": "^2.3.0",
