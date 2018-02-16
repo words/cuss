@@ -22,14 +22,14 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^15.0.0",
+    "browserify": "^16.0.0",
     "esmangle": "^1.0.0",
     "f-ck": "^1.0.0",
     "profanities": "^2.3.0",
-    "remark-cli": "^4.0.0",
+    "remark-cli": "^5.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "tape": "^4.4.0",
-    "xo": "^0.18.0"
+    "xo": "^0.20.0"
   },
   "scripts": {
     "build-md": "remark . -qfo",
@@ -43,9 +43,10 @@
   "xo": {
     "space": true,
     "esnext": false,
-    "ignores": [
-      "cuss.js"
-    ]
+    "rules": {
+      "no-var": "off",
+      "prefer-arrow-callback": "off"
+    }
   },
   "remarkConfig": {
     "plugins": [

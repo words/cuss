@@ -4,7 +4,7 @@ var assert = require('assert');
 var test = require('tape');
 var profanities = require('profanities');
 var fck = require('f-ck');
-var cuss = require('./');
+var cuss = require('.');
 
 var missing = [];
 
