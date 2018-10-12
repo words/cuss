@@ -4,6 +4,14 @@ Map of [1700+ profanities][profanities] to sureness rating.
 This rating _does not_ represent _how_ vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
+## language support
+
+Other languages are also supported : 
+
+*   English
+*   French
+*   Arabic (Latin-Script Slang)
+
 ## Installation
 
 [npm][]:
@@ -44,6 +52,12 @@ on context.
 **cuss** supports 1770 English profane words and phrases from
 [profanities][support].
 
+**french list** comes from and has been adapted from here :  
+*  [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)  
+**Arabic list** compiled from personal contributions , as well as these sources :   
+*  [data.world](https://toolbox.google.com/datasetsearch/search?query=Dirty%20Naughty%20Obscene%20and%20Otherwise%20Bad%20Words%20in%20Arabic&docid=G1hm%2BP5gyL2Npx9WAAAAAA%3D%3D)    
+*  [youswear.com](http://www.youswear.com/index.asp?language=Arabic)   
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -63,3 +77,4 @@ on context.
 [profanities]: https://github.com/words/profanities
 
 [support]: https://github.com/words/profanities#support
+
