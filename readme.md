@@ -54,12 +54,12 @@ on context.
 
 **french list** comes from and has been adapted from here :
 
-*  [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
+*   [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
 
-**Arabic list** compiled from personal contributions , as well as these sources :
+**Arabic list** compiled from personal contributions and these sources :
 
-*  [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
-*  [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
+*   [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
+*   [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
 
 ## License
 
