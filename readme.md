@@ -6,10 +6,11 @@ likely it is to be used as either profanity or clean text.
 
 ## language support
 
-Other languages are also supported : 
+Other languages are also supported :
 
 *   English
 *   French
+*   Spanish
 
 ## Installation
 
@@ -52,6 +53,12 @@ on context.
 [profanities][support].
 
 **french list** comes from and has been adapted from here : <https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais>
+
+**spanish list** comes from and has been adapted from the following sources:
+<https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.html>
+<https://www.mundoxat.com/foro/showthread.php?301-Lista-de-palabras-MALAS-Necesito-AYUDA%21>
+<https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es>
+<https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728>
 
 ## License
 
