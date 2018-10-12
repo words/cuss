@@ -53,11 +53,13 @@ on context.
 [profanities][support].
 
 **french list** comes from and has been adapted from here :
-* [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
+
+*  [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
 
 **Arabic list** compiled from personal contributions , as well as these sources :
-* [data](https://toolbox.google.com/datasetsearch/search?query=Dirty%20Naughty%20Obscene%20and%20Otherwise%20Bad%20Words%20in%20Arabic&docid=G1hm%2BP5gyL2Npx9WAAAAAA%3D%3D)
-* [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
+
+*  [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
+*  [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
 
 ## License
 
