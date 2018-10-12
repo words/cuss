@@ -5,10 +5,12 @@ This rating _does not_ represent _how_ vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
 ## language support
+
 Other languages are also supported : 
- * English
- * French
- 
+
+*   English
+*   French
+
 ## Installation
 
 [npm][]:
@@ -48,7 +50,8 @@ on context.
 
 **cuss** supports 1770 English profane words and phrases from
 [profanities][support].
-**french list** comes from and has been adapted from here : https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais
+
+**french list** comes from and has been adapted from here : <https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais>
 
 ## License
 
