@@ -6,11 +6,12 @@ likely it is to be used as either profanity or clean text.
 
 ## language support
 
-Other languages are also supported : 
+Other languages are also supported :
 
 *   English      
 *   French      
 *   Arabic (Latin-Script Slang)      
+*   Spanish
 
 ## Installation
 
@@ -60,6 +61,12 @@ on context.
 
 *   [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
 *   [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
+
+**spanish list** comes from and has been adapted from the following sources:
+<https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.html>
+<https://www.mundoxat.com/foro/showthread.php?301-Lista-de-palabras-MALAS-Necesito-AYUDA%21>
+<https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es>
+<https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728>
 
 ## License
 
