@@ -8,8 +8,9 @@ likely it is to be used as either profanity or clean text.
 
 Other languages are also supported :
 
-*   English
-*   French
+*   English      
+*   French      
+*   Arabic (Latin-Script Slang)      
 *   Spanish
 
 ## Installation
@@ -52,7 +53,14 @@ on context.
 **cuss** supports 1770 English profane words and phrases from
 [profanities][support].
 
-**french list** comes from and has been adapted from here : <https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais>
+**french list** comes from and has been adapted from here :
+
+*   [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
+
+**Arabic list** compiled from personal contributions and these sources :
+
+*   [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
+*   [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
 
 **spanish list** comes from and has been adapted from the following sources:
 <https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.html>
