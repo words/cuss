@@ -28,6 +28,7 @@
     "browserify": "^16.0.0",
     "esmangle": "^1.0.0",
     "f-ck": "^1.0.0",
+    "prettier": "^1.14.3",
     "profanities": "^2.3.0",
     "remark-cli": "^5.0.0",
     "remark-preset-wooorm": "^4.0.0",
@@ -35,16 +36,23 @@
     "xo": "^0.20.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.json -s cuss > cuss.js",
     "build-mangle": "esmangle cuss.js > cuss.min.js",
-    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
-    "lint": "xo",
+    "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
-    "test": "npm run build && npm run lint && npm run test-api"
+    "test": "npm run format && npm run build && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "rules": {
       "no-var": "off",

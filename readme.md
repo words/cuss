@@ -15,12 +15,12 @@ npm install cuss
 ## Usage
 
 ```js
-var cuss = require('cuss');
+var cuss = require('cuss')
 
-console.log(Object.keys(cuss).length); // 1770
+console.log(Object.keys(cuss).length) // 1770
 
-console.log(cuss.beaver); // 0
-console.log(cuss.asshat); // 2
+console.log(cuss.beaver) // 0
+console.log(cuss.asshat) // 2
 ```
 
 ## API
