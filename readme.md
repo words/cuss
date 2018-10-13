@@ -1,17 +1,8 @@
 # cuss [![Build Status][travis-badge]][travis]
 
-Map of [1700+ profanities][profanities] to sureness rating.
+Map of profanities to sureness rating.
 This rating _does not_ represent _how_ vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
-
-## language support
-
-Other languages are also supported :
-
-*   English      
-*   French      
-*   Arabic (Latin-Script Slang)      
-*   Spanish
 
 ## Installation
 
@@ -50,23 +41,18 @@ on context.
 
 ## Support
 
-**cuss** supports 1770 English profane words and phrases from
-[profanities][support].
-
-**french list** comes from and has been adapted from here :
-
-*   [Wikitionary](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais)
-
-**Arabic list** compiled from personal contributions and these sources :
-
-*   [data](https://data.world/wordlists/dirty-naughty-obscene-and-otherwise-bad-words-in-arabic)
-*   [youswear.com](http://www.youswear.com/index.asp?language=Arabic)
-
-**spanish list** comes from and has been adapted from the following sources:
-<https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.html>
-<https://www.mundoxat.com/foro/showthread.php?301-Lista-de-palabras-MALAS-Necesito-AYUDA%21>
-<https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es>
-<https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728>
+*   [`index.json`](index.json) — English.
+    ± 1770 English profane words and phrases from
+    [profanities][]
+*   [`ar-latn`](ar-latn.json) — Arabic (Latin-Script).
+    ± 250 Arabic profane words and phrases from
+    [`LDNOOBW`][ar-source-ldnoobw] and [`youswear`][ar-source-youswear]
+*   [`es.json`](es.json) — Spanish.
+    ± 550 Spanish profane words and phrases from
+    [`LDNOOBW`][es-source-ldnoobw], [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa], [`mundoxat.om`][es-source-mundoxat]
+*   [`fr.json`](fr.json) — French.
+    ± 730 French profane words and phrases from
+    [Wikitionary][fr-source]
 
 ## License
 
@@ -86,4 +72,16 @@ on context.
 
 [profanities]: https://github.com/words/profanities
 
-[support]: https://github.com/words/profanities#support
+[fr-source]: https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais
+
+[ar-source-ldnoobw]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
+
+[ar-source-youswear]: http://www.youswear.com/index.asp?language=Arabic
+
+[es-source-taringa]: https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.htm
+
+[es-source-mundoxat]: https://www.mundoxat.com/foro/showthread.php?301-Lista-de-palabras-MALAS-Necesito-AYUDA%21
+
+[es-source-ldnoobw]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es
+
+[es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
