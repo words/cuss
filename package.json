@@ -18,7 +18,10 @@
   ],
   "main": "index.json",
   "files": [
-    "index.json"
+    "index.json",
+    "ar-latn.json",
+    "es.json",
+    "fr.json"
   ],
   "dependencies": {},
   "devDependencies": {
