@@ -53,6 +53,8 @@ on context.
 *   [`fr.json`](fr.json) — French.
     ± 730 French profane words and phrases from
     [`wiktionary.org`][fr-source]
+    [`pt-br.json`](pt-br.json) — ± 140 Brazilian Portuguese profane words from
+    [`aprenderpalavras.com`][pt-br-source]
 
 ## License
 
@@ -85,3 +87,5 @@ on context.
 [es-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es
 
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
+
+[pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
