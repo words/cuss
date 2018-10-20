@@ -50,8 +50,7 @@ on context.
     [`naughty-words`][es-source-naughty-words],
     [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
     [`mundoxat.om`][es-source-mundoxat]
-*   [`fr.json`](fr.json) — French.
-    ± 730 French profane words and phrases from
+*   [`fr.json`](fr.json) — ± 730 French profane words and phrases from
     [`wiktionary.org`][fr-source]
 *   [`pt-br.json`](pt-br.json) — ± 140 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
