@@ -30,7 +30,7 @@ test('profanities', function(t) {
       }
 
       assert.ok(profanity in cuss, 'should exist')
-      assert.equal(typeof cuss[profanity], 'number', 'should be a number')
+      assert.strictEqual(typeof cuss[profanity], 'number', 'should be a number')
       assert.ok(cuss[profanity] >= 0, 'should be gte 0')
       assert.ok(cuss[profanity] <= 2, 'should be lte 2')
     }, fck(profanity))

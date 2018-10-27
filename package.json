@@ -30,11 +30,11 @@
     "f-ck": "^1.0.0",
     "prettier": "^1.14.3",
     "profanities": "^2.3.0",
-    "remark-cli": "^5.0.0",
+    "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "tape": "^4.4.0",
     "tinyify": "^2.4.3",
-    "xo": "^0.20.0"
+    "xo": "^0.23.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
