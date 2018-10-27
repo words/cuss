@@ -36,7 +36,7 @@ test('profanities', function(t) {
     }, fck(profanity))
   })
 
-  t.equal(Object.keys(cuss).length, 1770, 'should have a count')
+  t.equal(Object.keys(cuss).length, 1772, 'should have a count')
   t.deepEqual(missing, [], 'should not have missing profanities')
 
   t.end()
