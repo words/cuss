@@ -23,6 +23,19 @@ console.log(cuss.beaver) // 0
 console.log(cuss.asshat) // 2
 ```
 
+### Usage of locale versions
+
+_To use the Portuguese from Brazil by example_
+
+```js
+var cuss = require('cuss/pt-br')
+
+console.log(Object.keys(cuss).length) // 140
+
+console.log(cuss.burro) // 1
+console.log(cuss.bixa) // 2
+```
+
 ## API
 
 ### `cuss`
