@@ -30,7 +30,7 @@ _To use the Portuguese from Brazil by example_
 ```js
 var cuss = require('cuss/pt-br')
 
-console.log(Object.keys(cuss).length) // 140
+console.log(Object.keys(cuss).length) // 148
 
 console.log(cuss.burro) // 1
 console.log(cuss.bixa) // 2
@@ -65,7 +65,7 @@ on context.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
-*   [`pt-br.json`](pt-br.json) — ± 140 Brazilian Portuguese profane words from
+*   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
 
 ## License
