@@ -27,7 +27,7 @@ var counts = {
   en: 1772,
   es: 593,
   fr: 737,
-  ptBr: 140
+  ptBr: 148
 }
 
 test('cuss', function(t) {
