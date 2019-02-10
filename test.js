@@ -25,7 +25,7 @@ var profanities = {
 var counts = {
   arLatn: 247,
   en: 1772,
-  es: 593,
+  es: 650,
   fr: 737,
   ptBr: 148
 }
