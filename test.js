@@ -79,3 +79,5 @@ test('profanities', function(t) {
 
   t.end()
 })
+
+/* eslint-enable max-nested-callbacks */
