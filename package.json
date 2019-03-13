@@ -27,9 +27,7 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^16.0.0",
-    "f-ck": "^1.0.0",
     "prettier": "^1.14.3",
-    "profanities": "^2.3.0",
     "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "tape": "^4.4.0",
@@ -37,12 +35,13 @@
     "xo": "^0.24.0"
   },
   "scripts": {
+    "generate": "node build",
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.json -s cuss > cuss.js",
     "build-mangle": "browserify index.json -s cuss -p tinyify > cuss.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
-    "test": "npm run format && npm run build && npm run test-api"
+    "test": "npm run generate && npm run format && npm run build && npm run test-api"
   },
   "prettier": {
     "tabWidth": 2,
