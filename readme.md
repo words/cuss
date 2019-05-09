@@ -69,6 +69,8 @@ on context.
     [`wiktionary.org`][fr-source]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
+*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
+    [`Italian Profanity` from WikiPedia][it-source-wiki]
 
 ## Related
 
@@ -139,3 +141,5 @@ Finally, open a Pull Request.
 [luis-von-ahn]: http://www.cs.cmu.edu/~biglou/resources/
 
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
+
+[it-source-wiki]: https://en.wikipedia.org/wiki/Italian_profanity
