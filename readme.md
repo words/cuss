@@ -1,7 +1,7 @@
 # cuss [![Build Status][travis-badge]][travis]
 
 Map of profanities to sureness rating.
-This rating _does not_ represent _how_ vulgar a term is, instead, how
+This rating *does not* represent *how* vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
 ## Installation
@@ -25,7 +25,7 @@ console.log(cuss.asshat) // 2
 
 ### Usage of locale versions
 
-_To use the Portuguese from Brazil by example_
+*To use the Portuguese from Brazil by example*
 
 ```js
 var cuss = require('cuss/pt-br')
