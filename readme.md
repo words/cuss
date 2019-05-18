@@ -44,11 +44,10 @@ console.log(cuss.bixa) // 2
 
 ### `cuss`
 
-**Type**: `Object.<number>` — **cuss** exposes a dictionary
-of phrases to ratings, where each key can be considered a profanity,
-and each rating is a number between `0` and `2` (both including),
-representing the certainty the key is used as a profanity depending
-on context.
+`cuss` is a dictionary of phrases to ratings (`Object.<number>`), where each key
+can be considered a profanity, and each rating is a number between `0` and `2`
+(both including), representing the certainty the key is used as a profanity
+depending on context.
 
 | Rating | Use as a profanity | Use in clean text | Example |
 | ------ | ------------------ | ----------------- | ------- |
