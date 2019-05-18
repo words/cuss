@@ -98,8 +98,9 @@ Thanks, contributions are greatly appreciated!  :+1:
 New terms can be added to the corresponding JSON file as listed in the support
 section.
 
-To add a new language, create a new JSON file using a lowercased preferred
-BCP-47 tag (feel free to ask for help if you’re not sure).
+To add a new language, create a new JSON file using a lower-cased and dash-cased
+preferred (according to the [IANA][] registry) [BCP 47][bcp47-spec] language
+tag.
 
 After adding a word, run `npm install` to install all required dependencies,
 then `npm test` to update: the project includes some scripts to make sure
@@ -151,3 +152,7 @@ Finally, open a Pull Request.
 [luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
 
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
+
+[bcp47-spec]: https://tools.ietf.org/html/bcp47
+
+[iana]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
