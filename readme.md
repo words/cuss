@@ -116,7 +116,7 @@ Finally, open a Pull Request.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [profanities]: https://github.com/words/profanities
 
@@ -124,7 +124,7 @@ Finally, open a Pull Request.
 
 [ar-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
 
-[ar-source-youswear]: http://www.youswear.com/index.asp?language=Arabic
+[ar-source-youswear]: https://www.youswear.com/index.asp?language=Arabic
 
 [es-source-taringa]: https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.htm
 
@@ -136,6 +136,6 @@ Finally, open a Pull Request.
 
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
-[luis-von-ahn]: http://www.cs.cmu.edu/~biglou/resources/
+[luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
 
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
