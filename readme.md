@@ -1,4 +1,8 @@
-# cuss [![Build Status][travis-badge]][travis]
+# cuss
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Map of profanities to sureness rating.
 This rating *does not* represent *how* vulgar a term is, instead, how
@@ -108,9 +112,17 @@ Finally, open a Pull Request.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/cuss.svg
+[build-badge]: https://img.shields.io/travis/words/cuss.svg
 
-[travis]: https://travis-ci.org/words/cuss
+[build]: https://travis-ci.org/words/cuss
+
+[downloads-badge]: https://img.shields.io/npm/dm/cuss.svg
+
+[downloads]: https://www.npmjs.com/package/cuss
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/cuss.svg
+
+[size]: https://bundlephobia.com/result?p=cuss
 
 [npm]: https://docs.npmjs.com/cli/install
 
