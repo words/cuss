@@ -29,7 +29,7 @@ console.log(cuss.asshat) // 2
 
 ### Usage of locale versions
 
-To use Portuguese (as used inBrazil), do:
+To use Portuguese (as used in Brazil), do:
 
 ```js
 var cuss = require('cuss/pt-br')
