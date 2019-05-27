@@ -1,7 +1,11 @@
-# cuss [![Build Status][travis-badge]][travis]
+# cuss
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Map of profanities to sureness rating.
-This rating _does not_ represent _how_ vulgar a term is, instead, how
+This rating *does not* represent *how* vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
 ## Installation
@@ -25,7 +29,7 @@ console.log(cuss.asshat) // 2
 
 ### Usage of locale versions
 
-_To use the Portuguese from Brazil by example_
+To use Portuguese (as used in Brazil), do:
 
 ```js
 var cuss = require('cuss/pt-br')
@@ -40,11 +44,10 @@ console.log(cuss.bixa) // 2
 
 ### `cuss`
 
-**Type**: `Object.<number>` — **cuss** exposes a dictionary
-of phrases to ratings, where each key can be considered a profanity,
-and each rating is a number between `0` and `2` (both including),
-representing the certainty the key is used as a profanity depending
-on context.
+`cuss` is a dictionary of phrases to ratings (`Object.<number>`), where each key
+can be considered a profanity, and each rating is a number between `0` and `2`
+(both including), representing the certainty the key is used as a profanity
+depending on context.
 
 | Rating | Use as a profanity | Use in clean text | Example |
 | ------ | ------------------ | ----------------- | ------- |
@@ -67,10 +70,10 @@ on context.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
+*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
+    [`Italian Profanity` from WikiPedia][it-source]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
-*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
-    [`Italian Profanity` from WikiPedia][it-source-wiki]
 
 ## Related
 
@@ -96,8 +99,9 @@ Thanks, contributions are greatly appreciated!  :+1:
 New terms can be added to the corresponding JSON file as listed in the support
 section.
 
-To add a new language, create a new JSON file using a lowercased preferred
-BCP-47 tag (feel free to ask for help if you’re not sure).
+To add a new language, create a new JSON file using a lower-cased and dash-cased
+preferred (according to the [IANA][] registry) [BCP 47][bcp47-spec] language
+tag.
 
 After adding a word, run `npm install` to install all required dependencies,
 then `npm test` to update: the project includes some scripts to make sure
@@ -110,15 +114,23 @@ Finally, open a Pull Request.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/cuss.svg
+[build-badge]: https://img.shields.io/travis/words/cuss.svg
 
-[travis]: https://travis-ci.org/words/cuss
+[build]: https://travis-ci.org/words/cuss
+
+[downloads-badge]: https://img.shields.io/npm/dm/cuss.svg
+
+[downloads]: https://www.npmjs.com/package/cuss
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/cuss.svg
+
+[size]: https://bundlephobia.com/result?p=cuss
 
 [npm]: https://docs.npmjs.com/cli/install
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [profanities]: https://github.com/words/profanities
 
@@ -126,7 +138,7 @@ Finally, open a Pull Request.
 
 [ar-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
 
-[ar-source-youswear]: http://www.youswear.com/index.asp?language=Arabic
+[ar-source-youswear]: https://www.youswear.com/index.asp?language=Arabic
 
 [es-source-taringa]: https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.htm
 
@@ -136,10 +148,14 @@ Finally, open a Pull Request.
 
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
 
+[it-source]: https://en.wikipedia.org/wiki/Italian_profanity
+
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
-[luis-von-ahn]: http://www.cs.cmu.edu/~biglou/resources/
+[luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
 
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
 
-[it-source-wiki]: https://en.wikipedia.org/wiki/Italian_profanity
+[bcp47-spec]: https://tools.ietf.org/html/bcp47
+
+[iana]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
