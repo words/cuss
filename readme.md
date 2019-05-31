@@ -70,10 +70,13 @@ depending on context.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
-*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
-    [`Italian Profanity` from WikiPedia][it-source]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
+*   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
+    [`Italian Profanity` from WikiPedia][it-source]
+    [`Italian slang` from Wiktionary][it-source-wiktionary-slang]
+    [`Italian offensive terms` from Wiktionary][it-source-wiktionary-offensiveterms]
+    [`Italian dialectal terms` from Wiktionary][it-source-wiktionary-italiandialectalterms]
 
 ## Related
 
@@ -148,8 +151,6 @@ Finally, open a Pull Request.
 
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
 
-[it-source]: https://en.wikipedia.org/wiki/Italian_profanity
-
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
 [luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
@@ -159,3 +160,11 @@ Finally, open a Pull Request.
 [bcp47-spec]: https://tools.ietf.org/html/bcp47
 
 [iana]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+
+[it-source]: https://en.wikipedia.org/wiki/Italian_profanity
+
+[it-source-wiktionary-slang]: https://en.wiktionary.org/wiki/Category:Italian_slang
+
+[it-source-wiktionary-italianoffensiveterms]: https://en.wiktionary.org/wiki/Category:Italian_offensive_terms
+
+[it-source-wiktionary-italiandialectalterms]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
