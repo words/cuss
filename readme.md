@@ -70,6 +70,8 @@ depending on context.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
+*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
+    [`Italian Profanity` from WikiPedia][it-source]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
 *   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
@@ -150,6 +152,8 @@ Finally, open a Pull Request.
 [es-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es
 
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
+
+[it-source]: https://en.wikipedia.org/wiki/Italian_profanity
 
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
