@@ -73,11 +73,10 @@ depending on context.
 *   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
     [`Italian Profanity` from WikiPedia][it-source]
     [`Italian slang` from Wiktionary][it-source-wiktionary-slang]
-    [`Italian offensive terms` from Wiktionary][it-source-wiktionary-offensiveterms]
-    [`Italian dialectal terms` from Wiktionary][it-source-wiktionary-italiandialectalterms]
+    [`Italian offensive terms` from Wiktionary][it-source-wiktionary-offensive]
+    [`Italian dialectal terms` from Wiktionary][it-source-wiktionary-dialectal]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
-
 
 ## Related
 
@@ -168,6 +167,6 @@ Finally, open a Pull Request.
 
 [it-source-wiktionary-slang]: https://en.wiktionary.org/wiki/Category:Italian_slang
 
-[it-source-wiktionary-italianoffensiveterms]: https://en.wiktionary.org/wiki/Category:Italian_offensive_terms
+[it-source-wiktionary-offensive]: https://en.wiktionary.org/wiki/Category:Italian_offensive_terms
 
-[it-source-wiktionary-italiandialectalterms]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
+[it-source-wiktionary-dialectal]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
