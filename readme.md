@@ -153,6 +153,12 @@ Finally, open a Pull Request.
 
 [it-source]: https://en.wikipedia.org/wiki/Italian_profanity
 
+[it-source-wiktionary-slang]: https://en.wiktionary.org/wiki/Category:Italian_slang
+
+[it-source-wiktionary-offensive]: https://en.wiktionary.org/wiki/Category:Italian_offensive_terms
+
+[it-source-wiktionary-dialectal]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
+
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
 [luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
@@ -162,11 +168,3 @@ Finally, open a Pull Request.
 [bcp47-spec]: https://tools.ietf.org/html/bcp47
 
 [iana]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-
-[it-source]: https://en.wikipedia.org/wiki/Italian_profanity
-
-[it-source-wiktionary-slang]: https://en.wiktionary.org/wiki/Category:Italian_slang
-
-[it-source-wiktionary-offensive]: https://en.wiktionary.org/wiki/Category:Italian_offensive_terms
-
-[it-source-wiktionary-dialectal]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
