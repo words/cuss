@@ -70,15 +70,14 @@ depending on context.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
-*   [`it.json`](it.json) — ± 330 Italian profane words and phrases from
-    [`Italian Profanity` from WikiPedia][it-source]
-*   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
-    [`aprenderpalavras.com`][pt-br-source]
 *   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
     [`Italian Profanity` from WikiPedia][it-source]
     [`Italian slang` from Wiktionary][it-source-wiktionary-slang]
     [`Italian offensive terms` from Wiktionary][it-source-wiktionary-offensiveterms]
     [`Italian dialectal terms` from Wiktionary][it-source-wiktionary-italiandialectalterms]
+*   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
+    [`aprenderpalavras.com`][pt-br-source]
+
 
 ## Related
 
