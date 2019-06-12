@@ -78,7 +78,7 @@ depending on context.
     [`Italian jocular terms`][it-source-wiktionary-jocularterms]
     (all from Wiktionary)
     [`parole oscene` from Treccani][it-source-treccani-paroleoscene]
-    [swear words @chucknorris-io][it-source-swear-words]
+    [`swear-words` from @chucknorris-io][it-source-swear-words]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
 
