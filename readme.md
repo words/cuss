@@ -71,13 +71,14 @@ depending on context.
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
 *   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
-    [`Italian Profanity` from WikiPedia][it-source]
-    [`Italian slang` from Wiktionary][it-source-wiktionary-slang]
-    [`Italian offensive terms` from Wiktionary][it-source-wiktionary-offensive]
-    [`Italian dialectal terms` from Wiktionary][it-source-wiktionary-dialectal]
-    [`Italian jocular terms` from Wiktionary][it-source-wiktionary-italianjocularterms]
+    [`Italian Profanity` from WikiPedia][it-source],
+    [`Italian slang`][it-source-wiktionary-slang]
+    [`Italian offensive terms`][it-source-wiktionary-offensive]
+    [`Italian dialectal terms`][it-source-wiktionary-dialectal]
+    [`Italian jocular terms`][it-source-wiktionary-jocularterms]
+    (all from Wiktionary)
     [`parole oscene` from Treccani][it-source-treccani-paroleoscene]
-    ['swear words' from User chucknorris-io git][it-source-chucknorris-io/swear-words]
+    [swear words @chucknorris-io][it-source-swear-words]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
 
@@ -162,11 +163,11 @@ Finally, open a Pull Request.
 
 [it-source-wiktionary-dialectal]: https://en.wiktionary.org/wiki/Category:Italian_dialectal_terms
 
-[it-source-wiktionary-italianjocularterms]: https://en.wiktionary.org/wiki/Category:Italian_jocular_terms
+[it-source-wiktionary-jocularterms]: https://en.wiktionary.org/wiki/Category:Italian_jocular_terms
 
 [it-source-treccani-paroleoscene]: http://www.treccani.it/enciclopedia/parole-oscene_(Enciclopedia-dell'Italiano)/
 
-[it-source-chucknorris-io/swear-words]: https://github.com/chucknorris-io/swear-words/blob/master/it
+[it-source-swear-words]: https://github.com/chucknorris-io/swear-words/blob/master/it
 
 [pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
