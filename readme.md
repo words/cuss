@@ -34,7 +34,7 @@ To use Portuguese (as used in Brazil), do:
 ```js
 var cuss = require('cuss/pt-br')
 
-console.log(Object.keys(cuss).length) // 148
+console.log(Object.keys(cuss).length) // 171
 
 console.log(cuss.burro) // 1
 console.log(cuss.bixa) // 2
