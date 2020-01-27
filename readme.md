@@ -8,15 +8,15 @@ Map of profanities to sureness rating.
 This rating *does not* represent *how* vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install cuss
 ```
 
-## Usage
+## Use
 
 ```js
 var cuss = require('cuss')
