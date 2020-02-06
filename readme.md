@@ -71,32 +71,32 @@ depending on context.
 *   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
 *   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
-    [`Italian Profanity` from WikiPedia][it-source],
-    [`Italian slang`][it-source-wiktionary-slang]
-    [`Italian offensive terms`][it-source-wiktionary-offensive]
-    [`Italian dialectal terms`][it-source-wiktionary-dialectal]
-    [`Italian jocular terms`][it-source-wiktionary-jocularterms]
-    (all from Wiktionary)
-    [`parole oscene` from Treccani][it-source-treccani-paroleoscene]
-    [`swear-words` from @chucknorris-io][it-source-swear-words]
+    [Italian profanity][it-source] (WikiPedia);
+    [Italian slang][it-source-wiktionary-slang]
+    [Italian offensive terms][it-source-wiktionary-offensive]
+    [Italian dialectal terms][it-source-wiktionary-dialectal]
+    [Italian jocular terms][it-source-wiktionary-jocularterms]
+    (Wiktionary);
+    [Parole oscene][it-source-treccani-paroleoscene] (Treccani);
+    and [`chucknorris-io/swear-words`][it-source-swear-words]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
 
 ## Related
 
-*   [buzzwords](https://github.com/words/buzzwords)
+*   [`buzzwords`](https://github.com/words/buzzwords)
     — List of buzzwords
-*   [dale-chall](https://github.com/words/dale-chall)
+*   [`dale-chall`](https://github.com/words/dale-chall)
     — List of familiar American-English words (1995)
-*   [fillers](https://github.com/words/fillers)
+*   [`fillers`](https://github.com/words/fillers)
     — List of filler words
-*   [hedges](https://github.com/words/hedges)
+*   [`hedges`](https://github.com/words/hedges)
     — List of hedge words
-*   [profanities][]
+*   [`profanities`][profanities]
     — List of the same profane words, but without the sureness
-*   [spache](https://github.com/words/spache)
+*   [`spache`](https://github.com/words/spache)
     — List of simple American-English words (1974)
-*   [weasels](https://github.com/words/weasels)
+*   [`weasels`](https://github.com/words/weasels)
     — List of weasel words
 
 ## Contributing
