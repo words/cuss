@@ -81,7 +81,7 @@ depending on context.
     and [`chucknorris-io/swear-words`][it-source-swear-words]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
-*   [`pt-pt.json`](pt-pt.json) — ± 35 Portuguese profane words from 
+*   [`pt-pt.json`](pt-pt.json) — ± 45 Portuguese profane words from 
     [`wikipedia`][pt-pt-source] and common culture
 
 ## Related
