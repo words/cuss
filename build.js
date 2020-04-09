@@ -3,8 +3,8 @@ var {extname, basename} = require('path')
 var pkg = require('./package')
 
 fs.readdirSync('.')
-  .filter(fp => extname(fp) === '.json' && basename(fp) !== 'package.json')
-  .forEach(fp => {
+  .filter((fp) => extname(fp) === '.json' && basename(fp) !== 'package.json')
+  .forEach((fp) => {
     if (!pkg.files.includes(fp)) {
       throw new Error(fp + ' should be in `package.json`’s files')
     }

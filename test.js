@@ -4,7 +4,7 @@ var test = require('tape')
 
 var cuss = require('.')
 
-test('cuss', function(t) {
+test('cuss', function (t) {
   t.equal(typeof cuss, 'object', 'should be an object #1')
 
   t.ok('asshat' in cuss, 'should contain words #1')
