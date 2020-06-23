@@ -11,10 +11,11 @@ fs.readdirSync('.')
 
     var input = JSON.parse(fs.readFileSync(fp))
     var keys = Object.keys(input).sort()
-    var output = keys.reduce((acc, cur) => {
-      acc[cur] = input[cur]
-      return acc
-    }, {})
+    var output = {}
+
+    keys.forEach((cur) => {
+      output[cur] = input[cur]
+    })
 
     fs.writeFileSync(fp, JSON.stringify(output, null, 2) + '\n')
 
