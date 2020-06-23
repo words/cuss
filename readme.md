@@ -59,8 +59,8 @@ depending on context.
 
 *   [`index.json`](index.json) — ± 1770 English profane words and phrases from
     [Luis von Ahn’s Research Group (Carnegie Mellon)][luis-von-ahn], the
-    [`List of ethnic slurs` from WikiPedia][racial-slurs], and other many more
-    since)
+    [`List of ethnic slurs` from WikiPedia][racial-slurs], and many
+    contributions since)
 *   [`ar-latn.json`](ar-latn.json) — ± 250 Arabic (Latin-Script) profane words
     and phrases from [`naughty-words`][ar-source-naughty-words] and
     [`youswear`][ar-source-youswear]
@@ -81,7 +81,7 @@ depending on context.
     and [`chucknorris-io/swear-words`][it-source-swear-words]
 *   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
-*   [`pt-pt.json`](pt-pt.json) — ± 45 Portuguese profane words from 
+*   [`pt-pt.json`](pt-pt.json) — ± 45 Portuguese profane words from
     [`wikipedia`][pt-pt-source] and common culture
 
 ## Related
