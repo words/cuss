@@ -4,7 +4,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Map of profanities to sureness rating.
+Map of profanities, slurs, and obscenities to a sureness rating.
 This rating *does not* represent *how* vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
@@ -21,7 +21,7 @@ npm install cuss
 ```js
 var cuss = require('cuss')
 
-console.log(Object.keys(cuss).length) // 1773
+console.log(Object.keys(cuss).length) // 1776
 
 console.log(cuss.beaver) // 0
 console.log(cuss.asshat) // 2
@@ -34,7 +34,7 @@ To use Portuguese (as used in Brazil), do:
 ```js
 var cuss = require('cuss/pt-br')
 
-console.log(Object.keys(cuss).length) // 171
+console.log(Object.keys(cuss).length) // 173
 
 console.log(cuss.burro) // 1
 console.log(cuss.bixa) // 2
@@ -45,7 +45,7 @@ console.log(cuss.bixa) // 2
 ### `cuss`
 
 `cuss` is a dictionary of phrases to ratings (`Object.<number>`), where each key
-can be considered a profanity, and each rating is a number between `0` and `2`
+can be considered offensive, and each rating is a number between `0` and `2`
 (both including), representing the certainty the key is used as a profanity
 depending on context.
 
