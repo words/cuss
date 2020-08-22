@@ -42,7 +42,7 @@
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . --write && xo --fix",
     "build-bundle": "browserify index.json -s cuss > cuss.js",
     "build-mangle": "browserify index.json -s cuss -p tinyify > cuss.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
