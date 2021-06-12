@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
+/** @type {{files: string[]}} */
 const pkg = JSON.parse(String(fs.readFileSync('package.json')))
 
 main()
@@ -24,8 +25,10 @@ async function main() {
       throw new Error(fp + ' should be in `package.json`’s files')
     }
 
+    /** @type {{cuss: Record<string, number>}} */
     // eslint-disable-next-line no-await-in-loop
-    const input = (await import('./' + fp)).cuss
+    const mod = await import('./' + fp)
+    const input = mod.cuss
     const keys = Object.keys(input).sort()
     /** @type {Record<string, number>} */
     const output = {}
