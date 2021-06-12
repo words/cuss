@@ -136,13 +136,13 @@ Finally, open a pull request.
 
 <!-- Definitions -->
 
-[build-badge]: https://github.com/wooorm/cuss/workflows/main/badge.svg
+[build-badge]: https://github.com/words/cuss/workflows/main/badge.svg
 
-[build]: https://github.com/wooorm/cuss/actions
+[build]: https://github.com/words/cuss/actions
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/cuss.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/cuss.svg
 
-[coverage]: https://codecov.io/github/wooorm/cuss
+[coverage]: https://codecov.io/github/words/cuss
 
 [downloads-badge]: https://img.shields.io/npm/dm/cuss.svg
 
