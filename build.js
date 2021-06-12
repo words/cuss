@@ -27,6 +27,7 @@ async function main() {
     // eslint-disable-next-line no-await-in-loop
     const input = (await import('./' + fp)).cuss
     const keys = Object.keys(input).sort()
+    /** @type {Record<string, number>} */
     const output = {}
     let offset = -1
 
