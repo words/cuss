@@ -123,9 +123,9 @@ Finally, open a Pull Request.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/cuss.svg
+[build-badge]: https://github.com/wooorm/cuss/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/cuss
+[build]: https://github.com/wooorm/cuss/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/cuss.svg
 
