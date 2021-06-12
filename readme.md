@@ -33,10 +33,10 @@ console.log(cuss.asshat) // 2
 
 ### Usage of locale versions
 
-To use Portuguese (as used in Brazil), do:
+To use Portuguese do:
 
 ```js
-import {cuss} from 'cuss/pt-br'
+import {cuss} from 'cuss/pt'
 
 console.log(Object.keys(cuss).length) // 173
 
@@ -48,8 +48,8 @@ console.log(cuss.bixa) // 2
 
 `cuss` has the following entries in its export map: `cuss` (English),
 `cuss/ar-latn` (Arabic (Latin script)), `cuss/es` (Spanish), `cuss/fr` (French),
-`cuss/it` (Italian), `cuss/pt-br` (Portuguese (Brazillian)), `cuss/pt-pt`
-(Portuguese (Portugal)).
+`cuss/it` (Italian), `cuss/pt` (Portuguese), `cuss/pt-pt` (Portuguese
+(Portugal)).
 
 Each entry exports the identifier `cuss`.
 There are no default exports.
@@ -91,8 +91,8 @@ profanity depending on context.
     (Wiktionary);
     [Parole oscene][it-source-treccani-paroleoscene] (Treccani);
     and [`chucknorris-io/swear-words`][it-source-swear-words]
-*   [`cuss/pt-br`](pt-br.js) — ± 148 Brazilian Portuguese profane words from
-    [`aprenderpalavras.com`][pt-br-source]
+*   [`cuss/pt`](pt.js) — ± 148 Portuguese profane words from
+    [`aprenderpalavras.com`][pt-source]
 *   [`cuss/pt-pt`](pt-pt.js) — ± 45 Portuguese profane words from
     [`wikipedia`][pt-pt-source] and common culture
 
@@ -188,7 +188,7 @@ Finally, open a pull request.
 
 [it-source-swear-words]: https://github.com/chucknorris-io/swear-words/blob/master/it
 
-[pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
+[pt-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/
 
 [luis-von-ahn]: https://www.cs.cmu.edu/~biglou/resources/
 

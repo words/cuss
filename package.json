@@ -34,8 +34,8 @@
     "fr.d.ts",
     "it.js",
     "it.d.ts",
-    "pt-br.js",
-    "pt-br.d.ts",
+    "pt.js",
+    "pt.d.ts",
     "pt-pt.js",
     "pt-pt.d.ts"
   ],
@@ -49,8 +49,8 @@
     "./fr.js": "./fr.js",
     "./it": "./it.js",
     "./it.js": "./it.js",
-    "./pt-br": "./pt-br.js",
-    "./pt-br.js": "./pt-br.js",
+    "./pt": "./pt.js",
+    "./pt.js": "./pt.js",
     "./pt-pt": "./pt-pt.js",
     "./pt-pt.js": "./pt-pt.js"
   },
