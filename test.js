@@ -1,10 +1,7 @@
-'use strict'
+import test from 'tape'
+import {cuss} from './index.js'
 
-var test = require('tape')
-
-var cuss = require('.')
-
-test('cuss', function (t) {
+test('cuss', (t) => {
   t.equal(typeof cuss, 'object', 'should be an object #1')
 
   t.ok('asshat' in cuss, 'should contain words #1')

@@ -20,34 +20,47 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
-  "main": "index.json",
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
   "files": [
-    "index.json",
-    "ar-latn.json",
-    "es.json",
-    "fr.json",
-    "it.json",
-    "pt-br.json",
-    "pt-pt.json"
+    "index.js",
+    "ar-latn.js",
+    "es.js",
+    "fr.js",
+    "it.js",
+    "pt-br.js",
+    "pt-pt.js"
   ],
-  "dependencies": {},
+  "exports": {
+    ".": "./index.js",
+    "./ar-latn": "./ar-latn.js",
+    "./ar-latn.js": "./ar-latn.js",
+    "./es": "./es.js",
+    "./es.js": "./es.js",
+    "./fr": "./fr.js",
+    "./fr.js": "./fr.js",
+    "./it": "./it.js",
+    "./it.js": "./it.js",
+    "./pt-br": "./pt-br.js",
+    "./pt-br.js": "./pt-br.js",
+    "./pt-pt": "./pt-pt.js",
+    "./pt-pt.js": "./pt-pt.js"
+  },
   "devDependencies": {
-    "browserify": "^17.0.0",
+    "c8": "^7.0.0",
     "prettier": "^2.0.0",
     "remark-cli": "^9.0.0",
     "remark-preset-wooorm": "^8.0.0",
     "tape": "^5.0.0",
-    "tinyify": "^3.0.0",
-    "xo": "^0.38.0"
+    "xo": "^0.39.0"
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier . --write && xo --fix",
-    "build-bundle": "browserify index.json -s cuss > cuss.js",
-    "build-mangle": "browserify index.json -s cuss -p tinyify > cuss.min.js",
-    "build": "npm run build-bundle && npm run build-mangle",
-    "test-api": "node test",
-    "test": "npm run generate && npm run format && npm run build && npm run test-api"
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
+    "test-api": "node test.js",
+    "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov node test.js",
+    "test": "npm run generate && npm run format && npm run test-coverage"
   },
   "prettier": {
     "tabWidth": 2,
@@ -58,12 +71,7 @@
     "trailingComma": "none"
   },
   "xo": {
-    "prettier": true,
-    "esnext": false,
-    "rules": {
-      "no-var": "off",
-      "prefer-arrow-callback": "off"
-    }
+    "prettier": true
   },
   "remarkConfig": {
     "plugins": [

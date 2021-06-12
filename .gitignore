@@ -1,6 +1,5 @@
 .DS_Store
 *.log
+coverage/
 node_modules/
-cuss.js
-cuss.min.js
 yarn.lock

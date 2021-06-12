@@ -1,6 +1,7 @@
 # cuss
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -9,6 +10,9 @@ This rating *does not* represent *how* vulgar a term is, instead, how
 likely it is to be used as either profanity or clean text.
 
 ## Install
+
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
 
 [npm][]:
 
@@ -19,7 +23,7 @@ npm install cuss
 ## Use
 
 ```js
-var cuss = require('cuss')
+import {cuss} from 'cuss'
 
 console.log(Object.keys(cuss).length) // 1776
 
@@ -32,7 +36,7 @@ console.log(cuss.asshat) // 2
 To use Portuguese (as used in Brazil), do:
 
 ```js
-var cuss = require('cuss/pt-br')
+import {cuss} from 'cuss/pt-br'
 
 console.log(Object.keys(cuss).length) // 173
 
@@ -42,12 +46,20 @@ console.log(cuss.bixa) // 2
 
 ## API
 
+`cuss` has the following entries in its export map: `cuss` (English),
+`cuss/ar-latn` (Arabic (Latin script)), `cuss/es` (Spanish), `cuss/fr` (French),
+`cuss/it` (Italian), `cuss/pt-br` (Portuguese (Brazillian)), `cuss/pt-pt`
+(Portuguese (Portugal)).
+
+Each entry exports the identifier `cuss`.
+There are no default exports.
+
 ### `cuss`
 
-`cuss` is a dictionary of phrases to ratings (`Object.<number>`), where each key
-can be considered offensive, and each rating is a number between `0` and `2`
-(both including), representing the certainty the key is used as a profanity
-depending on context.
+Each `cuss` is a dictionary of phrases to ratings (`Record<string, number>`),
+where each key can be considered offensive, and each rating is a number between
+`0` and `2` (both including), representing the certainty the key is used as a
+profanity depending on context.
 
 | Rating | Use as a profanity | Use in clean text | Example |
 | ------ | ------------------ | ----------------- | ------- |
@@ -57,20 +69,20 @@ depending on context.
 
 ## Support
 
-*   [`index.json`](index.json) — ± 1770 English profane words and phrases from
+*   [`cuss`](index.js) — ± 1770 English profane words and phrases from
     [Luis von Ahn’s Research Group (Carnegie Mellon)][luis-von-ahn], the
     [`List of ethnic slurs` from WikiPedia][racial-slurs], and many
     contributions since)
-*   [`ar-latn.json`](ar-latn.json) — ± 250 Arabic (Latin-Script) profane words
+*   [`cuss/ar-latn`](ar-latn.js) — ± 250 Arabic (Latin-Script) profane words
     and phrases from [`naughty-words`][ar-source-naughty-words] and
     [`youswear`][ar-source-youswear]
-*   [`es.json`](es.json) — ± 650 Spanish profane words and phrases from
+*   [`cuss/es`](es.js) — ± 650 Spanish profane words and phrases from
     [`naughty-words`][es-source-naughty-words],
     [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
     [`mundoxat.om`][es-source-mundoxat]
-*   [`fr.json`](fr.json) — ± 740 French profane words and phrases from
+*   [`cuss/fr`](fr.js) — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
-*   [`it.json`](it.json) — ± 800 Italian profane words and phrases from
+*   [`cuss/it`](it.js) — ± 800 Italian profane words and phrases from
     [Italian profanity][it-source] (WikiPedia);
     [Italian slang][it-source-wiktionary-slang]
     [Italian offensive terms][it-source-wiktionary-offensive]
@@ -79,9 +91,9 @@ depending on context.
     (Wiktionary);
     [Parole oscene][it-source-treccani-paroleoscene] (Treccani);
     and [`chucknorris-io/swear-words`][it-source-swear-words]
-*   [`pt-br.json`](pt-br.json) — ± 148 Brazilian Portuguese profane words from
+*   [`cuss/pt-br`](pt-br.js) — ± 148 Brazilian Portuguese profane words from
     [`aprenderpalavras.com`][pt-br-source]
-*   [`pt-pt.json`](pt-pt.json) — ± 45 Portuguese profane words from
+*   [`cuss/pt-pt`](pt-pt.js) — ± 45 Portuguese profane words from
     [`wikipedia`][pt-pt-source] and common culture
 
 ## Related
@@ -103,19 +115,20 @@ depending on context.
 
 ## Contributing
 
-Thanks, contributions are greatly appreciated!  :+1:
+Thanks, contributions are greatly appreciated!
+:+1:
 
-New terms can be added to the corresponding JSON file as listed in the support
+New terms can be added to the corresponding files as listed in the support
 section.
 
-To add a new language, create a new JSON file using a lower-cased and dash-cased
-preferred (according to the [IANA][] registry) [BCP 47][bcp47-spec] language
-tag.
+To add a new language, create a new JS file with a [BCP 47][bcp47-spec] language
+tag as its name (lower case, dashes, and
+[preferred and normalized](https://github.com/wooorm/bcp-47-normalize)).
 
 After adding a word, run `npm install` to install all required dependencies,
 then `npm test` to update: the project includes some scripts to make sure
 everything is in order.
-Finally, open a Pull Request.
+Finally, open a pull request.
 
 ## License
 
@@ -126,6 +139,10 @@ Finally, open a Pull Request.
 [build-badge]: https://github.com/wooorm/cuss/workflows/main/badge.svg
 
 [build]: https://github.com/wooorm/cuss/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/cuss.svg
+
+[coverage]: https://codecov.io/github/wooorm/cuss
 
 [downloads-badge]: https://img.shields.io/npm/dm/cuss.svg
 
@@ -178,7 +195,5 @@ Finally, open a Pull Request.
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
 
 [bcp47-spec]: https://tools.ietf.org/html/bcp47
-
-[iana]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 
 [pt-pt-source]: https://pt.wikipedia.org/wiki/Palavr%C3%B5es_na_l%C3%ADngua_portuguesa
