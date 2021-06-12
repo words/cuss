@@ -167,7 +167,7 @@ Finally, open a Pull Request.
 
 [it-source-wiktionary-jocularterms]: https://en.wiktionary.org/wiki/Category:Italian_jocular_terms
 
-[it-source-treccani-paroleoscene]: http://www.treccani.it/enciclopedia/parole-oscene_(Enciclopedia-dell'Italiano)/
+[it-source-treccani-paroleoscene]: http://www.treccani.it/enciclopedia/parole-oscene_\(Enciclopedia-dell'Italiano\)/
 
 [it-source-swear-words]: https://github.com/chucknorris-io/swear-words/blob/master/it
 

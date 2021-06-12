@@ -1,23 +1,32 @@
 var fs = require('fs')
-var {extname, basename} = require('path')
-var pkg = require('./package')
+var path = require('path')
+var pkg = require('./package.json')
 
-fs.readdirSync('.')
-  .filter((fp) => extname(fp) === '.json' && basename(fp) !== 'package.json')
-  .forEach((fp) => {
-    if (!pkg.files.includes(fp)) {
-      throw new Error(fp + ' should be in `package.json`’s files')
-    }
+const files = fs
+  .readdirSync('.')
+  .filter(
+    (fp) => path.extname(fp) === '.json' && path.basename(fp) !== 'package.json'
+  )
 
-    var input = JSON.parse(fs.readFileSync(fp))
-    var keys = Object.keys(input).sort()
-    var output = {}
+let index = -1
 
-    keys.forEach((cur) => {
-      output[cur] = input[cur]
-    })
+while (++index < files.length) {
+  const fp = files[index]
 
-    fs.writeFileSync(fp, JSON.stringify(output, null, 2) + '\n')
+  if (!pkg.files.includes(fp)) {
+    throw new Error(fp + ' should be in `package.json`’s files')
+  }
 
-    console.log('✓ ' + fp + ' (' + keys.length + ')')
-  })
+  var input = JSON.parse(fs.readFileSync(fp))
+  var keys = Object.keys(input).sort()
+  var output = {}
+  let offset = -1
+
+  while (++offset < keys.length) {
+    output[keys[offset]] = input[keys[offset]]
+  }
+
+  fs.writeFileSync(fp, JSON.stringify(output, null, 2) + '\n')
+
+  console.log('✓ ' + fp + ' (' + keys.length + ')')
+}
