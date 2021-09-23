@@ -47,9 +47,9 @@ console.log(cuss.bixa) // 2
 ## API
 
 `cuss` has the following entries in its export map: `cuss` (English),
-`cuss/ar-latn` (Arabic (Latin script)), `cuss/es` (Spanish), `cuss/fr` (French),
-`cuss/it` (Italian), `cuss/pt` (Portuguese), `cuss/pt-pt` (Portuguese
-(Portugal)).
+`cuss/ar-latn` (Arabic (Latin script)), `cuss/de` (German), `cuss/es` (Spanish),
+`cuss/fr` (French), `cuss/it` (Italian), `cuss/pt` (Portuguese),
+`cuss/pt-pt` (Portuguese (Portugal)).
 
 Each entry exports the identifier `cuss`.
 There are no default exports.
@@ -76,6 +76,8 @@ profanity depending on context.
 *   [`cuss/ar-latn`](ar-latn.js) — ± 250 Arabic (Latin-Script) profane words
     and phrases from [`naughty-words`][ar-source-naughty-words] and
     [`youswear`][ar-source-youswear]
+*   [`cuss/de`](de.js) — ± 2180 German profane words and phrases from
+    [`insultwiki`][de-source-insultwiki]
 *   [`cuss/es`](es.js) — ± 650 Spanish profane words and phrases from
     [`naughty-words`][es-source-naughty-words],
     [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
@@ -165,6 +167,8 @@ Finally, open a pull request.
 [ar-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
 
 [ar-source-youswear]: https://www.youswear.com/index.asp?language=Arabic
+
+[de-source-insultwiki]: https://www.insult.wiki/schimpfwort-liste
 
 [es-source-taringa]: https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.htm
 
