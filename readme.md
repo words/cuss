@@ -6,60 +6,102 @@
 [![Size][size-badge]][size]
 
 Map of profanities, slurs, and obscenities to a sureness rating.
-This rating *does not* represent *how* vulgar a term is, instead, how
-likely it is to be used as either profanity or clean text.
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`cuss`](#cuss-1)
+*   [Data](#data)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Related](#related)
+*   [Contributing](#contributing)
+*   [Security](#security)
+*   [License](#license)
+
+## What is this?
+
+This package exposes lists of profane words in several languages.
+This rating *does not* represent *how* vulgar a term is.
+It represents how likely it is to be used as either profanity or clean text.
+
+## When should I use this?
+
+Use this for researching natural language.
+Don’t use it to make a “profanity filter”.
+Those are bad.
 
 ## Install
 
-This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
-Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install cuss
+```
+
+In Deno with [`esm.sh`][esmsh]:
+
+```js
+import {cuss} from 'https://esm.sh/cuss@2'
+```
+
+In browsers with [`esm.sh`][esmsh]:
+
+```html
+<script type="module">
+  import {cuss} from 'https://esm.sh/cuss@2?bundle'
+</script>
 ```
 
 ## Use
 
 ```js
 import {cuss} from 'cuss'
+import {cuss as cussPt} from 'cuss/pt'
 
 console.log(Object.keys(cuss).length) // 1776
+console.log(Object.keys(cussPt).length) // 173
 
 console.log(cuss.beaver) // 0
 console.log(cuss.asshat) // 2
-```
 
-### Usage of locale versions
-
-To use Portuguese do:
-
-```js
-import {cuss} from 'cuss/pt'
-
-console.log(Object.keys(cuss).length) // 173
-
-console.log(cuss.burro) // 1
-console.log(cuss.bixa) // 2
+console.log(cussPt.burro) // 1
+console.log(cussPt.bixa) // 2
 ```
 
 ## API
 
-`cuss` has the following entries in its export map: `cuss` (English),
-`cuss/ar-latn` (Arabic (Latin script)), `cuss/es` (Spanish), `cuss/fr` (French),
-`cuss/it` (Italian), `cuss/pt` (Portuguese), `cuss/pt-pt` (Portuguese
-(Portugal)).
+`cuss` exports the following entries:
+
+*   `cuss`
+    — English
+*   `cuss/ar-latn`
+    — Arabic (Latin)
+*   `cuss/es`
+    — Spanish
+*   `cuss/fr`
+    — French
+*   `cuss/it`
+    — Italian
+*   `cuss/pt`
+    — Portuguese
+*   `cuss/pt-pt`
+    — European Portuguese
 
 Each entry exports the identifier `cuss`.
 There are no default exports.
 
 ### `cuss`
 
-Each `cuss` is a dictionary of phrases to ratings (`Record<string, number>`),
-where each key can be considered offensive, and each rating is a number between
-`0` and `2` (both including), representing the certainty the key is used as a
-profanity depending on context.
+Map of offensive words to a sureness rating (`Record<string, number>`).
+
+Each rating is a number between `0` and `2` (both including), representing the
+certainty the key is used as a profanity depending on context.
 
 | Rating | Use as a profanity | Use in clean text | Example |
 | ------ | ------------------ | ----------------- | ------- |
@@ -67,22 +109,27 @@ profanity depending on context.
 | 1      | maybe              | maybe             | addict  |
 | 0      | unlikely           | likely            | beaver  |
 
-## Support
+## Data
 
-*   [`cuss`](index.js) — ± 1770 English profane words and phrases from
+*   [`cuss`](index.js)
+    — ± 1770 English profane words and phrases from
     [Luis von Ahn’s Research Group (Carnegie Mellon)][luis-von-ahn], the
     [`List of ethnic slurs` from WikiPedia][racial-slurs], and many
     contributions since)
-*   [`cuss/ar-latn`](ar-latn.js) — ± 250 Arabic (Latin-Script) profane words
-    and phrases from [`naughty-words`][ar-source-naughty-words] and
+*   [`cuss/ar-latn`](ar-latn.js)
+    — ± 250 Arabic (Latin) profane words and phrases from
+    [`naughty-words`][ar-source-naughty-words] and
     [`youswear`][ar-source-youswear]
-*   [`cuss/es`](es.js) — ± 650 Spanish profane words and phrases from
+*   [`cuss/es`](es.js)
+    — ± 650 Spanish profane words and phrases from
     [`naughty-words`][es-source-naughty-words],
     [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
     [`mundoxat.om`][es-source-mundoxat]
-*   [`cuss/fr`](fr.js) — ± 740 French profane words and phrases from
+*   [`cuss/fr`](fr.js)
+    — ± 740 French profane words and phrases from
     [`wiktionary.org`][fr-source]
-*   [`cuss/it`](it.js) — ± 800 Italian profane words and phrases from
+*   [`cuss/it`](it.js)
+    — ± 800 Italian profane words and phrases from
     [Italian profanity][it-source] (WikiPedia);
     [Italian slang][it-source-wiktionary-slang]
     [Italian offensive terms][it-source-wiktionary-offensive]
@@ -91,32 +138,45 @@ profanity depending on context.
     (Wiktionary);
     [Parole oscene][it-source-treccani-paroleoscene] (Treccani);
     and [`chucknorris-io/swear-words`][it-source-swear-words]
-*   [`cuss/pt`](pt.js) — ± 148 Portuguese profane words from
+*   [`cuss/pt`](pt.js)
+    — ± 148 Portuguese profane words from
     [`aprenderpalavras.com`][pt-source]
-*   [`cuss/pt-pt`](pt-pt.js) — ± 45 Portuguese profane words from
+*   [`cuss/pt-pt`](pt-pt.js)
+    — ± 45 Portuguese (European) profane words from
     [`wikipedia`][pt-pt-source] and common culture
+
+## Types
+
+This package is fully typed with [TypeScript][].
+It exports no additional types.
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 14.14+ and 16.0+.
+It also works in Deno and modern browsers.
 
 ## Related
 
 *   [`buzzwords`](https://github.com/words/buzzwords)
-    — List of buzzwords
+    — list of buzzwords
 *   [`dale-chall`](https://github.com/words/dale-chall)
-    — List of familiar American-English words (1995)
+    — list of familiar American-English words (1995)
 *   [`fillers`](https://github.com/words/fillers)
-    — List of filler words
+    — list of filler words
 *   [`hedges`](https://github.com/words/hedges)
-    — List of hedge words
+    — list of hedge words
 *   [`profanities`][profanities]
-    — List of the same profane words, but without the sureness
+    — list of the same profane words, but without the sureness
 *   [`spache`](https://github.com/words/spache)
-    — List of simple American-English words (1974)
+    — list of simple American-English words (1974)
 *   [`weasels`](https://github.com/words/weasels)
-    — List of weasel words
+    — list of weasel words
 
 ## Contributing
 
-Thanks, contributions are greatly appreciated!
-:+1:
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 New terms can be added to the corresponding files as listed in the support
 section.
@@ -125,10 +185,14 @@ To add a new language, create a new JS file with a [BCP 47][bcp47-spec] language
 tag as its name (lower case, dashes, and
 [preferred and normalized](https://github.com/wooorm/bcp-47-normalize)).
 
-After adding a word, run `npm install` to install all required dependencies,
-then `npm test` to update: the project includes some scripts to make sure
-everything is in order.
+After changing something, run `npm install` to install all required
+dependencies, then `npm test` to update: the project includes some scripts to
+make sure everything is in order.
 Finally, open a pull request.
+
+## Security
+
+This package is safe.
 
 ## License
 
@@ -153,6 +217,14 @@ Finally, open a pull request.
 [size]: https://bundlephobia.com/result?p=cuss
 
 [npm]: https://docs.npmjs.com/cli/install
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[esmsh]: https://esm.sh
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
 
 [license]: license
 
