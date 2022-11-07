@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 
 /** @type {{files: string[]}} */
 const pkg = JSON.parse(String(fs.readFileSync('package.json')))
