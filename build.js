@@ -52,7 +52,7 @@ while (++index < datasets.length) {
     basename,
     '/**\n * Map of ' +
       language +
-      ' profane words to a rating of sureness.\n */\nexport const cuss = ' +
+      ' profane words to a rating of sureness.\n *\n * @type {Record<string, number>}\n */\nexport const cuss = ' +
       JSON.stringify(cuss, null, 2) +
       '\n'
   )

@@ -1,5 +1,7 @@
 /**
  * Map of French profane words to a rating of sureness.
+ *
+ * @type {Record<string, number>}
  */
 export const cuss = {
   BLC: 2,

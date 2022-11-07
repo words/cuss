@@ -1,5 +1,7 @@
 /**
  * Map of Italian profane words to a rating of sureness.
+ *
+ * @type {Record<string, number>}
  */
 export const cuss = {
   allupare: 1,

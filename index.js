@@ -1,5 +1,7 @@
 /**
  * Map of English profane words to a rating of sureness.
+ *
+ * @type {Record<string, number>}
  */
 export const cuss = {
   abbo: 1,

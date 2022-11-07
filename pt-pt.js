@@ -1,5 +1,7 @@
 /**
  * Map of European Portuguese profane words to a rating of sureness.
+ *
+ * @type {Record<string, number>}
  */
 export const cuss = {
   anus: 1,
