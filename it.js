@@ -1,3 +1,6 @@
+/**
+ * Map of Italian profane words to a rating of sureness.
+ */
 export const cuss = {
   allupare: 1,
   allupata: 1,

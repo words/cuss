@@ -1,48 +1,62 @@
-import fs from 'node:fs'
+/**
+ * @typedef {import('type-fest').PackageJson} PackageJson
+ */
+
+import assert from 'node:assert/strict'
+import fs from 'node:fs/promises'
 import path from 'node:path'
 
-/** @type {{files: string[]}} */
-const pkg = JSON.parse(String(fs.readFileSync('package.json')))
+const languageNames = new Intl.DisplayNames(['en'], {type: 'language'})
 
-main()
+const pkgUrl = new URL('package.json', import.meta.url)
+/** @type {PackageJson} */
+const pkg = JSON.parse(String(await fs.readFile(pkgUrl)))
+assert('files' in pkg, 'expected `files` in `package.json`')
 
-async function main() {
-  const files = fs
-    .readdirSync('.')
-    .filter(
-      (fp) =>
-        path.extname(fp) === '.js' &&
-        path.basename(fp) !== 'build.js' &&
-        path.basename(fp) !== 'test.js'
-    )
+const files = await fs.readdir(new URL('./', import.meta.url))
+const datasets = files.filter(
+  (fp) =>
+    path.extname(fp) === '.js' &&
+    path.basename(fp) !== 'build.js' &&
+    path.basename(fp) !== 'test.js'
+)
 
-  let index = -1
+let index = -1
 
-  while (++index < files.length) {
-    const fp = files[index]
+/* eslint-disable no-await-in-loop */
+while (++index < datasets.length) {
+  const basename = datasets[index]
 
-    if (!pkg.files.includes(fp)) {
-      throw new Error(fp + ' should be in `package.json`’s files')
-    }
-
-    /** @type {{cuss: Record<string, number>}} */
-    // eslint-disable-next-line no-await-in-loop
-    const mod = await import('./' + fp)
-    const input = mod.cuss
-    const keys = Object.keys(input).sort()
-    /** @type {Record<string, number>} */
-    const output = {}
-    let offset = -1
-
-    while (++offset < keys.length) {
-      output[keys[offset]] = input[keys[offset]]
-    }
-
-    fs.writeFileSync(
-      fp,
-      'export const cuss = ' + JSON.stringify(output, null, 2) + '\n'
-    )
-
-    console.log('✓ ' + fp + ' (' + keys.length + ')')
+  if (!pkg.files.includes(basename)) {
+    throw new Error(basename + ' should be in `package.json`’s files')
   }
+
+  const modUrl = new URL(basename, import.meta.url)
+  /** @type {{cuss: Record<string, number>}} */
+  const mod = await import(modUrl.href)
+  const input = mod.cuss
+  const keys = Object.keys(input).sort()
+  /** @type {Record<string, number>} */
+  const cuss = {}
+  let offset = -1
+
+  while (++offset < keys.length) {
+    cuss[keys[offset]] = input[keys[offset]]
+  }
+
+  const stem = path.basename(basename, path.extname(basename))
+  const code = stem === 'index' ? 'en' : stem
+  const language = languageNames.of(code)
+
+  await fs.writeFile(
+    basename,
+    '/**\n * Map of ' +
+      language +
+      ' profane words to a rating of sureness.\n */\nexport const cuss = ' +
+      JSON.stringify(cuss, null, 2) +
+      '\n'
+  )
+
+  console.log('✓ ' + basename + ' (' + language + '; ' + keys.length + ')')
 }
+/* eslint-enable no-await-in-loop */

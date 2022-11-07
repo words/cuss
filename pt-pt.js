@@ -1,3 +1,6 @@
+/**
+ * Map of European Portuguese profane words to a rating of sureness.
+ */
 export const cuss = {
   anus: 1,
   badalhoca: 2,

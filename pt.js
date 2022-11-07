@@ -1,3 +1,6 @@
+/**
+ * Map of Portuguese profane words to a rating of sureness.
+ */
 export const cuss = {
   'Filha da puta': 2,
   'Filho da puta': 2,

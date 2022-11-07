@@ -1,3 +1,6 @@
+/**
+ * Map of French profane words to a rating of sureness.
+ */
 export const cuss = {
   BLC: 2,
   Bitembois: 2,

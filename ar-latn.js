@@ -1,3 +1,6 @@
+/**
+ * Map of Arabic (Latin) profane words to a rating of sureness.
+ */
 export const cuss = {
   "'attaï": 2,
   '2adeeb': 2,

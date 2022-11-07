@@ -1,3 +1,6 @@
+/**
+ * Map of English profane words to a rating of sureness.
+ */
 export const cuss = {
   abbo: 1,
   abeed: 2,

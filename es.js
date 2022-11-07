@@ -1,3 +1,6 @@
+/**
+ * Map of Spanish profane words to a rating of sureness.
+ */
 export const cuss = {
   abanto: 2,
   abrazafarolas: 2,
