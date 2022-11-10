@@ -94,5 +94,8 @@
     "atLeast": 100,
     "detail": true,
     "strict": true
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
