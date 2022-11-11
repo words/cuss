@@ -18,7 +18,8 @@ const datasets = files.filter(
   (fp) =>
     path.extname(fp) === '.js' &&
     path.basename(fp) !== 'build.js' &&
-    path.basename(fp) !== 'test.js'
+    path.basename(fp) !== 'test.js' &&
+    path.basename(fp) !== 'test-prereqs.js'
 )
 
 let index = -1

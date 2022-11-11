@@ -72,7 +72,8 @@
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node --conditions development test.js",
     "test-coverage": "c8 --check-coverage --100 --reporter lcov npm run test-api",
-    "test": "npm run generate && npm run build && npm run format && npm run test-coverage"
+    "test-prereqs": "node --conditions development test-prereqs.js",
+    "test": "npm run test-prereqs && npm run generate && npm run build && npm run format && npm run test-coverage"
   },
   "prettier": {
     "tabWidth": 2,
