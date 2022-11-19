@@ -187,7 +187,8 @@ tag as its name (lower case, dashes, and
 
 After changing something, run `npm install` to install all required
 dependencies, then `npm test` to update: the project includes some scripts to
-make sure everything is in order.  Note that the tests require Node.js 18.0+.
+make sure everything is in order.
+Note that the tests require Node.js 18.0+.
 Finally, open a pull request.
 
 ## Security
