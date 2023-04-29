@@ -585,7 +585,7 @@ export const cuss = {
   more: 0,
   mori: 0,
   moro: 0,
-  muori: 2,
+  muori: 0,
   mussa: 2,
   musse: 2,
   mussi: 2,
